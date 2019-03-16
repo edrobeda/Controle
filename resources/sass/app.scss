@@ -1,0 +1,101 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import './../../public/bower_components/bootstrap/dist/css/bootstrap.css';
+@import './../../public/bower_components/bootstrap/scss/bootstrap-grid.scss';
+@import './../../public/bower_components/bootstrap/scss/bootstrap-reboot.scss';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+html, body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+a{ color: #7777; }
+a:hover{ text-decoration: none; color: #7777; }
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+.center-block{
+  background-color: #eee;
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 40px;
+  label{
+    width: 70px;
+  }
+}
+
+.navbar{
+  background-color: #eeee;
+  padding-top: 15px;
+}
+.navbar-nav{
+    text-align: right;
+}
+
+.navbar-nav li{
+    display: inline-block;
+}
+
+.dropdown-item{
+    background-color: #dddd; 
+    padding: 4px 15px;
+}
+.dropdown-item:hover{
+  background-color: #aaaa;
+
+}
