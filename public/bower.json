@@ -18,6 +18,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "masonry-layout": "desandro/masonry#^4.2.2",
-    "admin-lte": "adminLTE#^2.4.10"
+    "admin-lte": "adminLTE#^2.4.10",
+    "datatables.net": "^1.10.19"
   }
 }

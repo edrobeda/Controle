@@ -18,7 +18,13 @@ class CreateUsersTable extends Migration
             $table->string('name')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->comment('A user description');
+            $table->string('role')->default('user')->comment('should be user or admin'); 
+            $table->string('description')->nullable()->comment('A user description');
+            $table->string('image')->nullable()->comment(' for target /upload/users');
+            $table->jsonb('options')->nullable()->default(json_encode([]));
+            $table->boolean('active')->default(true);
+            $table->ipAddress('conected')->nullable()->comment('ip conected');
             $table->rememberToken();
             $table->timestamps();
         });

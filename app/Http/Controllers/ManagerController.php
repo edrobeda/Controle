@@ -13,12 +13,18 @@ class ManagerController extends Controller
     }
 
     public function getDashboard(Request $request){
-        // $Helper = new Helper();
-        // $Helper->uploadImage('teste');
+        
         $data['page'] = 'dashboard';
 
         $data['login'] = json_decode( unserialize( base64_decode( session('login') ) ) );
+
         return view('manager/index')->with($data);
+    }
+
+
+    public function imageUploader(){
+        $Helper = new Helper();
+        $Helper->uploadImage('teste');
     }
     
 }

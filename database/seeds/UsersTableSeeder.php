@@ -21,7 +21,11 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'edrobeda@gmail.com',
-            'password' => base64_encode('123mudar')
+            'password' => base64_encode('123mudar'),
+            'email_verified_at' => null,
+            'role' => 'admin', 
+            'description' => 'A default Admin',
+            'image' => null,
         ]);
     
     }

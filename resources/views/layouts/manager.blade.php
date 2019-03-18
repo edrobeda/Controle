@@ -10,17 +10,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Controle</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="/bower_components/ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="bower_components/admin-lte/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/bower_components/admin-lte/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
-  <link rel="stylesheet" href="bower_components/admin-lte/dist/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="/bower_components/admin-lte/dist/css/skins/skin-blue.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/bower_components/datatables/media/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/datatables/media/css/dataTables.bootstrap.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,6 +58,7 @@ desired effect
 -->
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+
   <!-- Header Info -->
   @include('manager/include/header')
   
@@ -110,11 +114,15 @@ desired effect
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="/bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+
+<script type="text/javascript" src="/manager_assets/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" src="/manager_assets/bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
 @yield('js')
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.

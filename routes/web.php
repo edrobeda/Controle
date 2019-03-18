@@ -20,6 +20,7 @@ Route::post('/login', 'SiteController@postLogin');
 Route::group(['middleware' => 'managerAuth', 'prefix' => 'manager'], function(){
     Route::get('/', 'ManagerController@getDashboard')->name('manager');
     Route::get('dashboard', 'ManagerController@getDashboard');
+    Route::get('/user', 'manager\userController@getIndex');
 });
 
 
