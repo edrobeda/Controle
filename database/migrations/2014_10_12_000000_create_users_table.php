@@ -14,12 +14,12 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->autoIncrement();
             $table->string('name')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->comment('A user description');
-            $table->string('role')->default('user')->comment('should be user or admin'); 
+            $table->string('role')->default(2)->references('id')->on('tb_user_role')->comment('should be user or admin');
             $table->string('description')->nullable()->comment('A user description');
             $table->string('image')->nullable()->comment(' for target /upload/users');
             $table->jsonb('options')->nullable()->default(json_encode([]));

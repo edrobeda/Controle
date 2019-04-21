@@ -17,16 +17,17 @@ class UsersTableSeeder extends Seeder
         //     'password' => bcrypt('secret'),
         // ]);
 
-        
+
         DB::table('users')->insert([
             'name' => 'admin',
             'email' => 'edrobeda@gmail.com',
-            'password' => base64_encode('123mudar'),
             'email_verified_at' => null,
-            'role' => 'admin', 
+            'password' => base64_encode('123mudar'),
+            'role' => 1,
             'description' => 'A default Admin',
             'image' => null,
+            'active' => true
         ]);
-    
+
     }
 }
